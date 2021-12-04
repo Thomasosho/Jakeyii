@@ -34,7 +34,7 @@
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="index.html" class="logo">
-              <h4>Jakeyii <img src="assets/images/logo-icon.png" alt=""></h4>
+              <h4>Jakeyii <img src="norm/assets/images/logo-icon.png" alt=""></h4>
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
@@ -95,7 +95,7 @@
             </div>
             <div class="col-lg-6">
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/banner-right-image.png" alt="">
+                <img src="norm/assets/images/banner-right-image.png" alt="">
               </div>
             </div>
           </div>
@@ -248,7 +248,7 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-            <img src="assets/images/about-left-image.png" alt="">
+            <img src="norm/assets/images/about-left-image.png" alt="">
           </div>
         </div>
         <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -300,7 +300,7 @@
             <div class="row">
               <div class="col-lg-4">
                 <div class="icon">
-                  <img src="assets/images/service-icon-01.png" alt="">
+                  <img src="norm/assets/images/service-icon-01.png" alt="">
                 </div>
               </div>
               <div class="col-lg-8">
@@ -317,7 +317,7 @@
             <div class="row">
               <div class="col-lg-4">
                 <div class="icon">
-                  <img src="assets/images/service-icon-02.png" alt="">
+                  <img src="norm/assets/images/service-icon-02.png" alt="">
                 </div>
               </div>
               <div class="col-lg-8">
@@ -334,7 +334,7 @@
             <div class="row">
               <div class="col-lg-4">
                 <div class="icon">
-                  <img src="assets/images/service-icon-03.png" alt="">
+                  <img src="norm/assets/images/service-icon-03.png" alt="">
                 </div>
               </div>
               <div class="col-lg-8">
@@ -351,7 +351,7 @@
             <div class="row">
               <div class="col-lg-4">
                 <div class="icon">
-                  <img src="assets/images/service-icon-03.png" alt="">
+                  <img src="norm/assets/images/service-icon-03.png" alt="">
                 </div>
               </div>
               <div class="col-lg-8">
@@ -368,7 +368,7 @@
             <div class="row">
               <div class="col-lg-4">
                 <div class="icon">
-                  <img src="assets/images/service-icon-01.png" alt="">
+                  <img src="norm/assets/images/service-icon-01.png" alt="">
                 </div>
               </div>
               <div class="col-lg-8">
@@ -385,7 +385,7 @@
             <div class="row">
               <div class="col-lg-4">
                 <div class="icon">
-                  <img src="assets/images/service-icon-02.png" alt="">
+                  <img src="norm/assets/images/service-icon-02.png" alt="">
                 </div>
               </div>
               <div class="col-lg-8">
@@ -452,19 +452,19 @@
                   <ul>
                     <li>
                       <div class="icon">
-                        <img src="assets/images/contact-icon-01.png" alt="email icon">
+                        <img src="norm/assets/images/contact-icon-01.png" alt="email icon">
                       </div>
                       <a href="#">info@company.com</a>
                     </li>
                     <li>
                       <div class="icon">
-                        <img src="assets/images/contact-icon-02.png" alt="phone">
+                        <img src="norm/assets/images/contact-icon-02.png" alt="phone">
                       </div>
                       <a href="#">+001-002-0034</a>
                     </li>
                     <li>
                       <div class="icon">
-                        <img src="assets/images/contact-icon-03.png" alt="location">
+                        <img src="norm/assets/images/contact-icon-03.png" alt="location">
                       </div>
                       <a href="#">26th Street, Digital Villa</a>
                     </li>
