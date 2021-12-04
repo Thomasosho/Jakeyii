@@ -20,7 +20,7 @@
   <link href="admin/asset/css/style.css" rel="stylesheet">
   <!-- end: Css -->
 
-  <link rel="shortcut icon" href="admin/asset/img/logomi.png">
+  <!-- <link rel="shortcut icon" href="admin/asset/img/logomi.png"> -->
 </head>
 
 <body id="mimin" class="dashboard">
