@@ -39,9 +39,9 @@
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li class="scroll-to-section"><a href="#features">What We Do</a></li>
-              <li class="scroll-to-section"><a href="#services">Feedback from Clients</a></li>
-              <li class="scroll-to-section"><a href="#about">Contact</a></li>
+              <li class="scroll-to-section"><a href="#do">What We Do</a></li>
+              <li class="scroll-to-section"><a href="#client">Feedback from Clients</a></li>
+              <li class="scroll-to-section"><a href="#contact">Contact</a></li>
             @guest
                 @if (Route::has('login'))
                     <li class="scroll-to-section">
@@ -104,7 +104,7 @@
     </div>
   </div>
 
-  <div id="features" class="features section">
+  <div id="do" class="features section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -243,7 +243,7 @@
     </div>
   </div>
 
-  <div id="about" class="about-us section">
+  <div id="client" class="about-us section">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -282,7 +282,7 @@
     </div>
   </div>
 
-  <div id="services" class="our-services section">
+  <div id="client" class="our-services section">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
