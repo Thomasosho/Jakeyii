@@ -60,7 +60,7 @@
                 @endif
             @endguest
             @auth
-                <li class="scroll-to-section"><div class="main-blue-button"><a href="{{ url('/dashboard') }}">Dashboard</a></div></li>
+                <li class="scroll-to-section"><div class="main-blue-button"><a href="{{ url('/job') }}">Dashboard</a></div></li>
             @endauth
             </ul>        
             <a class='menu-trigger'>
