@@ -87,7 +87,7 @@
                   </div>
                   <div class="col-lg-12">
                     <div class="main-green-button scroll-to-section">
-                      <a href="/login">Request a Job</a>
+                      <a href="{{ route('login') }}">Request a Job</a>
                     </div>
                   </div>
                 </div>
