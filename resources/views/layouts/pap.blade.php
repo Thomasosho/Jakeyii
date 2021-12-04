@@ -84,7 +84,7 @@
                     </li>
                     <li class="ripple">
                       <a href="/change-password" class="tree-toggle nav-header">
-                        <span class="fa-fingerprint fa"></span> Change Password
+                        <span class="fa-user-lock fa"></span> Change Password
                       </a>
                     </li>
                   </ul>
@@ -113,7 +113,7 @@
                     </li>
                     <li class="ripple">
                       <a href="/change-password" class="tree-toggle nav-header">
-                        <span class="fa-fingerprint fa"></span> Change Password
+                        <span class="fa-user-lock fa"></span> Change Password
                       </a>
                     </li>
                   </ul>
