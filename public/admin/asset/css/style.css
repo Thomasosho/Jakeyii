@@ -17,7 +17,7 @@ a:hover {
   -ms-text-decoration: none;
   -o-text-decoration: none;
   text-decoration: none;
-  color: #2196F3;
+  color: orange;
   font-weight: bold;
 }
 
@@ -129,7 +129,7 @@ p.quote{
  .bg-purple      {background-color: #9C27B0 !important;}
  .bg-deep-purple {background-color: #673AB7 !important;}
  .bg-indigo      {background-color: #3F51B5 !important;}
- .bg-blue        {background-color: #2196F3 !important;}
+ .bg-blue        {background-color: orange !important;}
  .bg-light-blue  {background-color: #03A9F4 !important;}
  .bg-cyan        {background-color: #00BCD4 !important;}
  .bg-teal        {background-color: #009688 !important;}
@@ -366,7 +366,7 @@ p.quote{
     .search-v1 #tabs-demo6,.search-v1 #tabs-demo6 a{background-color: #fbfbfb !important;}
     .search-v1 .tab-pane{padding: 20px;}
     .search-v1 .search-v1-menu1 .media-left{font-size: 2em;line-height: 0.7;font-weight: bold;padding-top: 10px;}
-    .search-v1 .search-v1-menu1 .media-heading{font-size:17px;color: #2196F3 !important;font-weight: 600 !important;}
+    .search-v1 .search-v1-menu1 .media-heading{font-size:17px;color: orange !important;font-weight: 600 !important;}
     .search-v1 .media{padding: 20px;}
     .search-v1 .media:nth-child(2n+2){
       background-color: rgba(0,0,0,0.02) !important;
@@ -726,7 +726,7 @@ ul li a:focus {
   -ms-animation: rippleDate 0.75s linear;
   -o-animation: rippleDate 0.75s linear;
   animation: rippleDate 0.75s linear;
-  background: #2196F3;
+  background: orange;
 }
 
 /*animation effect*/
@@ -1658,7 +1658,7 @@ ul li a:focus {
   .avatar {
     height: 40px;
     width: 40px;
-    border: 4px solid #108DB6 !important;
+    border: 4px solid #d49236 !important;
     margin-top: 5px;
   }
 
@@ -1781,7 +1781,7 @@ ul li a:focus {
 
   .navbar {
     height: 55px;
-    background-color: #2196F3;
+    background-color: orange;
     color: #fff;
     border: none;
   }
@@ -2039,15 +2039,15 @@ ul li a:focus {
   float: left;
   padding: 20px;
   padding-top: 35px;
-  background-color: #2196F3;
+  background-color: orange;
   padding-bottom: 11px;
   color: #C62828;
   cursor: pointer;
-  -webkit-box-shadow: 0px 9px 0px 0px #2196F3, 0 -9px 0px 0px #2196F3, 4px 0 15px -4px rgba(0, 0, 0, 0.16), -4px 0 15px -4px rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0px 9px 0px 0px #2196F3, 0 -9px 0px 0px #2196F3, 4px 0 15px -4px rgba(0, 0, 0, 0.16), -4px 0 15px -4px rgba(0, 0, 0, 0.12);
-  -ms-box-shadow: 0px 9px 0px 0px #2196F3, 0 -9px 0px 0px #2196F3, 4px 0 15px -4px rgba(0, 0, 0, 0.16), -4px 0 15px -4px rgba(0, 0, 0, 0.12);
-  -o-box-shadow: 0px 9px 0px 0px #2196F3, 0 -9px 0px 0px #2196F3, 4px 0 15px -4px rgba(0, 0, 0, 0.16), -4px 0 15px -4px rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 9px 0px 0px #2196F3, 0 -9px 0px 0px #2196F3, 4px 0 15px -4px rgba(0, 0, 0, 0.16), -4px 0 15px -4px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 9px 0px 0px orange, 0 -9px 0px 0px orange, 4px 0 15px -4px rgba(0, 0, 0, 0.16), -4px 0 15px -4px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0px 9px 0px 0px orange, 0 -9px 0px 0px orange, 4px 0 15px -4px rgba(0, 0, 0, 0.16), -4px 0 15px -4px rgba(0, 0, 0, 0.12);
+  -ms-box-shadow: 0px 9px 0px 0px orange, 0 -9px 0px 0px orange, 4px 0 15px -4px rgba(0, 0, 0, 0.16), -4px 0 15px -4px rgba(0, 0, 0, 0.12);
+  -o-box-shadow: 0px 9px 0px 0px orange, 0 -9px 0px 0px orange, 4px 0 15px -4px rgba(0, 0, 0, 0.16), -4px 0 15px -4px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 9px 0px 0px orange, 0 -9px 0px 0px orange, 4px 0 15px -4px rgba(0, 0, 0, 0.16), -4px 0 15px -4px rgba(0, 0, 0, 0.12);
 }
 
 
