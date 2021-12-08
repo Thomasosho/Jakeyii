@@ -74,13 +74,24 @@
                       <p class="animated fadeInRight">Sat,October 1st 2029</p>
                     </li>
                     <li class="active ripple">
-                      <a href="/job" class="tree-toggle nav-header"><span class="fa-home fa"></span> Dashboard
-                      </a>
+                      @if(auth()->user()->name != "Admin")
+                        <a href="/job" class="tree-toggle nav-header">
+                          <span class="fa-home fa"></span>
+                          Dashboard
+                        </a>
+                      @else
+                        <a href="/requests" class="tree-toggle nav-header">
+                          <span class="fa-home fa"></span>
+                          Job Requests
+                        </a>
+                      @endif
                     </li>
                     <li class="ripple">
-                      <a href="/job-history" class="tree-toggle nav-header">
-                        <span class="fa-list fa"></span> Job History
-                      </a>
+                      @if(auth()->user()->name != "Admin")
+                        <a href="/job-history" class="tree-toggle nav-header">
+                          <span class="fa-list fa"></span> Job History
+                        </a>
+                      @endif
                     </li>
                     <li class="ripple">
                       <a href="/change-password" class="tree-toggle nav-header">
