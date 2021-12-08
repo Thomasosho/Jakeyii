@@ -54,109 +54,36 @@
                             <table class="table table-hover">
                               <tr>
                                 <th>No</th>
-                                <th>Name</th>
+                                <th>Description</th>
                                 <th>Status</th>
                                 <th></th>
                               </tr>
-                              <tr>
-                                <td>1</td>
-                                <td>Laptop Acer X291</td>
-                                <td>
-                                  <span class="label label-primary">NEW</span>
-                                </td>
-                                <td>
-                                  <div class="btn-group" role="group">
-                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Action
-                                      <span class="icon-arrow-down icons"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                      <li><a href="#">Confirm</a></li>
-                                      <li><a href="#">Ignore</a></li>
-                                    </ul>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>2</td>
-                                <td>LCD Tv 92Bd</td>
-                                <td><span class="label label-primary">NEW</span></td>
-                                <td>
-                                  <div class="btn-group" role="group">
-                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Action
-                                      <span class="icon-arrow-down icons"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                      <li><a href="#">Confirm</a></li>
-                                      <li><a href="#">Ignore</a></li>
-                                    </ul>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>3</td>
-                                <td>aX Microphone X291</td>
-                                <td><span class="label label-success">SOLD</span></td>
-                                <td>
-                                  <div class="btn-group" role="group">
-                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Action
-                                      <span class="icon-arrow-down icons"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                      <li><a href="#">Confirm</a></li>
-                                      <li><a href="#">Ignore</a></li>
-                                    </ul>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>4</td>
-                                <td>Laptop Aspire E1 -471G</td>
-                                <td><span class="label label-danger">CANCEL</span></td>
-                                <td>
-                                  <div class="btn-group" role="group">
-                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Action
-                                      <span class="icon-arrow-down icons"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                      <li><a href="#">Confirm</a></li>
-                                      <li><a href="#">Ignore</a></li>
-                                    </ul>
-                                  </div>
-                                </td>
-                              </tr>
-                               <tr>
-                                <td>5</td>
-                                <td>Speaker D82K</td>
-                                <td><span class="label label-success">SOLD</span></td>
-                                <td>
-                                  <div class="btn-group" role="group">
-                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Action
-                                      <span class="icon-arrow-down icons"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                      <li><a href="#">Confirm</a></li>
-                                      <li><a href="#">Ignore</a></li>
-                                    </ul>
-                                  </div>
-                                </td>
-                              </tr>
+                              @foreach($jobs as $key => $job)
+                                <tr>
+                                  <td>{{$key+1}}</td>
+                                  <td>{{$job->description}}</td>
+                                  <td>
+                                    <span class="label label-primary">{{$job->status_user}}</span>
+                                  </td>
+                                  <td>
+                                    <div class="btn-group" role="group">
+                                      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Action
+                                        <span class="icon-arrow-down icons"></span>
+                                      </button>
+                                      <ul class="dropdown-menu">
+                                        <li><a href="#">Confirm</a></li>
+                                        <li><a href="#">Ignore</a></li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                </tr>
+                              @endforeach
                             </table>
                             <center>
                               <div class="btn-group" role="group" aria-label="..." style="margin-top:20px;">
-                                      <button type="button" class="btn">
-                                        <span class="icon-arrow-left icons"></span>
-                                      </button>
-                                      <button type="button" class="btn active">1</button>
-                                      <button type="button" class="btn">2</button>
-                                      <button type="button" class="btn">
-                                        <span class="icon-arrow-right icons"></span>
-                                      </button>
-                                    </div>
+                               {!! $jobs->links() !!}
+                              </div>
                             </center>
                         </div>
                       </div>
