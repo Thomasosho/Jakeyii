@@ -16,7 +16,7 @@ class RequestController extends Controller
     public function index()
     {
         $jobs = Job::with('user')->orderBy('created_at','desc')->paginate(10);
-        return view('job.index', compact('jobs'));
+        return view('request.index', compact('jobs'));
     }
 
     /**
