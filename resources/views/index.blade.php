@@ -1,500 +1,451 @@
-
+<!-- black -->
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <title>Jakeyii</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <title>Jakeyii</title>
+  <!-- Favicons -->
+  <link href="norm/img/favicon.png" rel="icon">
+  <link href="norm/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Bootstrap core CSS -->
-    <link href="norm/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
+  <!-- Vendor CSS Files -->
+  <link href="norm/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="norm/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="norm/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="norm/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="norm/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="norm/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="norm/assets/css/fontawesome.css">
-    <link rel="stylesheet" href="norm/assets/css/templatemo-seo-dream.css">
-    <link rel="stylesheet" href="norm/assets/css/animated.css">
-    <link rel="stylesheet" href="norm/assets/css/owl.css">
-
+  <!-- Template Main CSS File -->
+  <link href="norm/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <h4>Jakeyii <img src="norm/assets/images/logo-icon.png" alt=""></h4>
-            </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-              <li class="scroll-to-section"><a href="#do">What We Do</a></li>
-              <li class="scroll-to-section"><a href="#client">Feedback from Clients</a></li>
-              <li class="scroll-to-section"><a href="#contact">Contact</a></li>
-            @guest
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <h1><a href="/">Jakeyii</a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#do">What We Do</a></li>
+          <li><a href="#client">Feedback from Clients</a></li>
+          <li><a href="#contact">Contact</a></li>
+          @guest
                 @if (Route::has('login'))
-                    <li class="scroll-to-section">
-                        <div class="main-f-button">
-                            <a href="{{ route('login') }}">Login</a>
-                        </div>
-                    </li> 
+                    <li>
+                      <a href="{{ route('login') }}">Login</a>
+                    </li>
                 @endif
 
                 @if (Route::has('register'))
-                    <li class="scroll-to-section">
-                        <div class="main-blue-button">
-                            <a href="{{ route('register') }}">Register</a>
-                        </div>
-                    </li> 
+                    <li>
+                      <a href="{{ route('register') }}">Register</a>
+                    </li>
                 @endif
             @endguest
             @auth
-                <li class="scroll-to-section"><div class="main-blue-button"><a href="{{ url('/job') }}">Dashboard</a></div></li>
+                <li>
+                  <a href="{{ url('/job') }}">Dashboard</a>
+                </li>
             @endauth
-            </ul>        
-            <a class='menu-trigger'>
-                <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background: url(norm/img/slide/slide-1.jpg)">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Jakeyii</span></h2>
+                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background: url(norm/img/slide/slide-2.jpg)">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated fanimate__adeInDown">Lorem <span>Ipsum Dolor</span></h2>
+                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background: url(norm/img/slide/slide-3.jpg)">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Sequi ea <span>Dime Lara</span></h2>
+                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Featured Section ======= -->
+    <section id="featured" class="featured">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="icon-box">
+              <i class="bi bi-card-checklist"></i>
+              <h3><a href="">Lorem Ipsum</a></h3>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="bi bi-bar-chart"></i>
+              <h3><a href="">Dolor Sitema</a></h3>
+              <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="bi bi-binoculars"></i>
+              <h3><a href="">Sed ut perspiciatis</a></h3>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Featured Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="do" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="norm/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Sed ut perspiciatis</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4><a href="">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4><a href="">Dele cardo</a></h4>
+              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4><a href="">Divera don</a></h4>
+              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="client" class="clients">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Clients</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="norm/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="norm/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="norm/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="norm/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="norm/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="norm/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="norm/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="norm/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact us</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>contact@example.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 ">
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>About Jakeyii</h3>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
 
-  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-6 align-self-center">
-              <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <h2>Job &amp; Requesting Agency</h2>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="main-green-button scroll-to-section">
-                      <a href="{{ route('login') }}">Request a Job</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="norm/assets/images/banner-right-image.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Jakeyii</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-  </div>
+  </footer><!-- End Footer -->
 
-  <div id="do" class="features section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-heading our-services">
-            <h6 style="text-align:center;">What we do</h6>
-            <h2 style="text-align:center;">Top <em>marketing</em> agency &amp; consult your website <span>with us</span></h2>
-          </div>
-          <div class="features-content">
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
-                  <div class="first-number number">
-                    <h6>01</h6>
-                  </div>
-                  <div class="icon"></div>
-                  <h4>Reach Out</h4>
-                  <div class="line-dec"></div>
-                  <p>This HTML5 template is based on Bootstrap 5 CSS. You are free to customize anything.</p>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="features-item second-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                  <div class="second-number number">
-                    <h6>02</h6>
-                  </div>
-                  <div class="icon"></div>
-                  <h4>Develop a Strategy</h4>
-                  <div class="line-dec"></div>
-                  <p>Lorem ipsum dolor sit ameter consectetur adipiscing li elit sed do eiusmod.</p>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                  <div class="third-number number">
-                    <h6>03</h6>
-                  </div>
-                  <div class="icon"></div>
-                  <h4>Implementation</h4>
-                  <div class="line-dec"></div>
-                  <p>If this template is useful for your website, please consider to <a rel="nofollow" href="https://www.paypal.me/templatemo" target="_blank">support us</a> a little.</p>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="features-item second-feature last-features-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-                  <div class="fourth-number number">
-                    <h6>04</h6>
-                  </div>
-                  <div class="icon"></div>
-                  <h4>Analyze the result</h4>
-                  <div class="line-dec"></div>
-                  <p>Below circular progress bar animation supports those CSS values 10, 20, 30, till 100.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="skills-content">
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                  <div class="progress" data-percentage="80">
-                    <span class="progress-left">
-                      <span class="progress-bar"></span>
-                    </span>
-                    <span class="progress-right">
-                      <span class="progress-bar"></span>
-                    </span>
-                    <div class="progress-value">
-                      <div>
-                        80%<br>
-                        <span>HTML/CSS/JS</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                  <div class="progress" data-percentage="60">
-                    <span class="progress-left">
-                      <span class="progress-bar"></span>
-                    </span>
-                    <span class="progress-right">
-                      <span class="progress-bar"></span>
-                    </span>
-                    <div class="progress-value">
-                      <div>
-                        60%<br>
-                        <span>Wordpress</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                  <div class="progress" data-percentage="90">
-                    <span class="progress-left">
-                      <span class="progress-bar"></span>
-                    </span>
-                    <span class="progress-right">
-                      <span class="progress-bar"></span>
-                    </span>
-                    <div class="progress-value">
-                      <div>
-                        90%<br>
-                        <span>Marketing</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="skill-item last-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                  <div class="progress" data-percentage="70">
-                    <span class="progress-left">
-                      <span class="progress-bar"></span>
-                    </span>
-                    <span class="progress-right">
-                      <span class="progress-bar"></span>
-                    </span>
-                    <div class="progress-value">
-                      <div>
-                        70%<br>
-                        <span>Photoshop</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <div id="client" class="about-us section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-            <img src="norm/assets/images/about-left-image.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-          <div class="section-heading">
-            <h6>Client Feedback Information</h6>
-            <h2>Top <em>marketing</em> agency &amp; consult your website <span>with us</span></h2>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 col-sm-4">
-              <div class="about-item">
-                <h4>750+</h4>
-                <h6>projects finished</h6>
-              </div>
-            </div>
-            <div class="col-lg-4 col-sm-4">
-              <div class="about-item">
-                <h4>340+</h4>
-                <h6>happy clients</h6>
-              </div>
-            </div>
-            <div class="col-lg-4 col-sm-4">
-              <div class="about-item">
-                <h4>128+</h4>
-                <h6>awards</h6>
-              </div>
-            </div>
-          </div>
-          <p><a rel="nofollow" href="https://templatemo.com/tm-563-seo-dream" target="_parent">SEO Dream</a> is free digital marketing CSS template provided by TemplateMo website. You are allowed to use this template for your business websites. Please DO NOT redistribute this template ZIP file on any Free CSS collection websites. You may contact us for more information. Thank you.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="client" class="our-services section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h6>Client Feedback</h6>
-            <h2>Discover What We Do &amp; <span>Offer</span> To Our <em>Clients</em></h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="norm/assets/images/service-icon-01.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4>Similar Websites</h4>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="norm/assets/images/service-icon-02.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4>Website Trends</h4>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="norm/assets/images/service-icon-03.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4>Traffic Analysis</h4>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="norm/assets/images/service-icon-03.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4>Optimizing Keywords</h4>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.7s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="norm/assets/images/service-icon-01.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4>Page Optimizations</h4>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service-item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.8s">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="icon">
-                  <img src="norm/assets/images/service-icon-02.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="right-content">
-                  <h4>Deep URL Analysis</h4>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="contact" class="contact-us section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="" method="post">
-            <div class="row">
-              <div class="col-lg-6 offset-lg-3">
-                <div class="section-heading">
-                  <h6>Contact Us</h6>
-                  <h2>Fill Out The Form Below To <span>Get</span> In <em>Touch</em> With Us</h2>
-                </div>
-              </div>
-              <div class="col-lg-9">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <fieldset>
-                      <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-6">
-                    <fieldset>
-                      <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-6">
-                    <fieldset>
-                      <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-6">
-                    <fieldset>
-                      <input type="subject" name="subject" id="subject" placeholder="Subject" autocomplete="on">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>  
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="main-button ">Send Message Now</button>
-                    </fieldset>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="contact-info">
-                  <ul>
-                    <li>
-                      <div class="icon">
-                        <img src="norm/assets/images/contact-icon-01.png" alt="email icon">
-                      </div>
-                      <a href="#">info@company.com</a>
-                    </li>
-                    <li>
-                      <div class="icon">
-                        <img src="norm/assets/images/contact-icon-02.png" alt="phone">
-                      </div>
-                      <a href="#">+001-002-0034</a>
-                    </li>
-                    <li>
-                      <div class="icon">
-                        <img src="norm/assets/images/contact-icon-03.png" alt="location">
-                      </div>
-                      <a href="#">26th Street, Digital Villa</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © <script>document.write(new Date().getFullYear())</script>. All Rights Reserved.
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="norm/vendor/jquery/jquery.min.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="norm/vendor/purecounter/purecounter.js"></script>
   <script src="norm/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="norm/assets/js/owl-carousel.js"></script>
-  <script src="norm/assets/js/animation.js"></script>
-  <script src="norm/assets/js/imagesloaded.js"></script>
-  <script src="norm/assets/js/custom.js"></script>
+  <script src="norm/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="norm/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="norm/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="norm/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="norm/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="norm/js/main.js"></script>
 
 </body>
+
 </html>
