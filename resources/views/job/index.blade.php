@@ -18,11 +18,12 @@
                       </div>
                   </div>
                 </div>
-                <form action="/job/store" method="post">
+                <form action="{{ route('job.store') }}" method="post" enctype="multipart/form-data">
+                    @csrf
                     <div class="col-md-6">
                         <div class="box-v5 panel">
                             <div class="panel-heading padding-0 bg-white border-none">
-                                <textarea placeholder="Describe Job to be created"></textarea>
+                                <textarea type="text" name="description" placeholder="Describe Job to be created"></textarea>
                             </div>
                             <div class="panel-body">
                             <div class="col-md-12 padding-0">

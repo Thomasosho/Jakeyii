@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Job;
+use Auth;
 use Illuminate\Http\Request;
 
 class JobController extends Controller
@@ -36,9 +37,27 @@ class JobController extends Controller
      */
     public function store(Request $request)
     {
+        if($request->hasFile('document')){
+            // Get filename with the extension
+            $filenameWithExt = $request->file('document')->getClientOriginalName();
+            // Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            // Get just ext
+            $extension = $request->file('document')->getClientOriginalExtension();
+            // Filename to store
+            $fileNameToStore = $filename.'_'.time().'.'.$extension;
+            // Upload Image
+            $path = $request->file('document')->storeAs('public/document', $fileNameToStore);
+        } else {
+            $fileNameToStore = 'document';
+        }
+        
         $job = new Job;
         $job->description = $request->input('description');
         $job->user_id = Auth::user()->id;
+        $job->file = $fileNameToStore;
+        $job->status_user = '';
+        $job->status_admin = '';
         $job->save();
         return back()->with('success', 'job created successfully');
     }
